@@ -1,6 +1,4 @@
 import PySimpleGUI as sg
-import sqlite3
-import sqlfunctions
 
 layout = [
     
@@ -59,8 +57,6 @@ while True:
         output = f'Thank You for your order {name}.The total cost of your order is {price} zlots'
         sg.Popup('Confirmation',output)
         
-    if event == '-BUTTON2-':
-        sqlfunctions.show_all()
-        
+    
         
 window.close()
